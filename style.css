@@ -1,0 +1,193 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --fonte-principal: 'Montserrat';
+    --botao-azul-efeito:#3c94ff;
+    --preto-sujo:#131313;
+    --amarelin-cafe: #efefc8;
+    --containerSize: auto; 
+}
+
+body {
+    background-color: var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+    height: 100%;
+    margin:0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 210px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: var(--amarelin-cafe);
+	font-weight:normal;
+	font-size: 16px;
+	text-decoration: none;
+    font-family: var(--fonte-principal);
+}
+
+nav a:hover {
+	color: #fafbf5;
+	text-decoration: underline;
+    font-family: var(--fonte-principal);
+}
+
+ul#nav {
+    width: 324px;
+    height: 35px;
+    padding-right: 1px;
+    list-style-type: none;
+    float: right;
+}
+
+ul#nav li {
+    display: inline;
+}
+
+ul#nav li a {
+    width: 98px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+    text-indent: -5000px;
+    overflow: hidden;
+}
+
+ul#nav li#home a { background-position: 0px 5px; }
+ul#nav li#sobre a { background-position: -99px 5px; }
+ul#nav li#contato a { background-position: -198px 5px; }
+
+ul#nav li#home a:hover { background-position: 0px 0px; }
+ul#nav li#sobre a:hover { background-position: -99px 0px; }
+ul#nav li#contato a:hover { background-position: -198px 0px; }
+
+
+.container {
+    width: 100%;
+    padding: 0px;
+    margin: 0%;
+    background-image: url("img/cafe.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container h1 {
+    position: absolute;
+    top: 130px;
+    right:inherit;
+    font-family: var(--fonte-principal);
+    font-weight: 100; 
+    font-size: 16px;
+    color: var(--amarelin-cafe);
+    margin-bottom: 0.2em;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+.titulo__container2 {
+    font-weight: 100;
+    font-size: 14px;
+    font-family: var(--fonte-principal);
+    color: var(--preto-sujo);
+    margin-bottom: 0.2em;
+    text-align: center;
+}
+
+.titulo__container3 {
+    font-weight: 300;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    color: var(--botao-azul-efeito);
+    margin-bottom: 0.1em;
+    text-align: center;
+}
+.container__colunas {
+    font-weight: 300;
+    font-size: 12px;
+    font-family: var(--fonte-principal);
+    color: var(--preto-sujo);
+    margin-bottom: 0.1em;
+    text-align: center;
+    width: 100%;
+    
+}
+.coluna__lista{
+    background-size: 40%;
+    display: flex;
+    list-style-type: none;
+    padding-right: 14px;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+}
+
+.colchete {
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+    font-family: var(--fonte-principal);
+	margin: 20px 0 0;
+}
+
+footer {
+	text-align: center;
+    font-family: var(--fonte-principal);
+}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("img/cafe.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
