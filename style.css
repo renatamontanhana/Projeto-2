@@ -89,7 +89,6 @@ ul#nav li#contato a:hover { background-position: -198px 0px; }
 .titulo_1 {
     position: absolute;
     top: 120px;
-    right:inherit;
     font-family: var(--fonte-principal);
     font-weight: 100; 
     font-size: 28px;
@@ -99,6 +98,7 @@ ul#nav li#contato a:hover { background-position: -198px 0px; }
     text-align: left;
     margin-left: 50px;
     padding-bottom: 16px;
+    padding: 10px;
   }
 
 .titulo__container2 {
@@ -113,13 +113,13 @@ ul#nav li#contato a:hover { background-position: -198px 0px; }
 }
 
 .titulo__container3 {
-    font-weight: 300;
+    font-weight: 100;
     font-size: 16px;
     font-family: var(--fonte-principal);
     color: var(--botao-cafe);
-    margin-bottom: 0.1em;
+    margin-bottom: 3em;
     text-align: center;
-    padding-bottom: 22px;
+    letter-spacing: 8px;
 }
 .container__colunas {
     font-weight: 300;
@@ -134,11 +134,13 @@ ul#nav li#contato a:hover { background-position: -198px 0px; }
     font-size: 16px;
     font-family: var(--fonte-principal);
     color: var(--botao-cafe);
-    margin-bottom: 0.1em;
     text-align: center;
-    padding-bottom: 22px;
+    padding: 20px;
+    line-height: 10px;
+    padding-bottom: 12px;
+    margin:10px;
 }
-.coluna__lista{
+.coluna__lista {
     background-size: 40%;
     display: flex;
     list-style-type: none;
@@ -146,6 +148,27 @@ ul#nav li#contato a:hover { background-position: -198px 0px; }
     justify-content: center;
     max-width: 100%;
     padding-bottom: 22px;
+    max-width: 700px;
+	margin: 0 auto;
+    
+    }
+    .img{
+        -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+		-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+		box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+    
+
+    }
+
+.texto{
+    font-weight: 300;
+    font-size: 14px;
+    font-family: var(--fonte-principal);
+    color: var(--botao-cafe);
+    text-align: center;
+    padding: 10px;
+    line-height: 20px;
+    padding-bottom: 12px;
 
 }
 
@@ -175,7 +198,7 @@ ul#nav li#contato a:hover { background-position: -198px 0px; }
 }
 
 .copyright {
-	color: #FFFFFF;
+	color: var(--botao-cafe);
 	font-size: 13px;
     font-family: var(--fonte-principal);
 	margin: 20px 0 0;
